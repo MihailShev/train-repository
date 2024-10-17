@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Продажа овощей</title>
+    <link rel="stylesheet" href="./css/page1.css" />
+    <style>
+      .product {
+        margin-bottom: 20px;
+      }
+      .product button {
+        margin: 0 10px;
+      }
+      #order-summary {
+        margin-top: 20px;
+        font-weight: bold;
+      }
+      .hidden {
+        display: none;
+      }
+      .form-container {
+        margin-top: 30px;
+      }
+    </style>
+  </head>
+  <div class="loader"></div>
+
+  <body>
+    <h1>Ассортимент овощей</h1>
+
+    <div id="vegetables">
+      <div class="product" data-name="Морковь" data-price="3">
+        Морковь (3 гривны за кг)
+        <button onclick="changeWeight(this, -0.1)">-</button>
+        <span class="weight">0</span> кг
+        <button onclick="changeWeight(this, 0.1)">+</button>
+      </div>
+      <div class="product" data-name="Огурец" data-price="2">
+        Огурец (2 гривны за кг)
+        <button onclick="changeWeight(this, -0.1)">-</button>
+        <span class="weight">0</span> кг
+        <button onclick="changeWeight(this, 0.1)">+</button>
+      </div>
+      <div class="product" data-name="Помидоры" data-price="5">
+        Помидоры (5 гривен за кг)
+        <button onclick="changeWeight(this, -0.1)">-</button>
+        <span class="weight">0</span> кг
+        <button onclick="changeWeight(this, 0.1)">+</button>
+      </div>
+    </div>
+
+    <div id="order-summary">Общая сумма: 0 гривен</div>
+
+    <button onclick="showForm()">Купить</button>
+
+    <!-- Форма для ввода данных -->
+    <div class="form-container hidden" id="order-form">
+      <h2>Заполните данные для заказа</h2>
+      <form>
+        <label for="name">Имя:</label>
+        <input type="text" id="name" name="name" required /><br /><br />
+
+        <label for="email">Электронная почта:</label>
+        <input type="email" id="email" name="email" required /><br /><br />
+
+        <label for="address">Адрес:</label>
+        <input type="text" id="address" name="address" required /><br /><br />
+
+        <label>Выберите способ оплаты:</label><br />
+        <input type="radio" id="cash" name="payment" value="cash" required />
+        <label for="cash">Наличными</label><br />
+        <input type="radio" id="card" name="payment" value="card" required />
+        <label for="card">Картой</label><br /><br />
+
+        <label for="comments">Комментарии:</label><br />
+        <textarea id="comments" name="comments" rows="4" cols="50"></textarea>
+        <br /><br />
+
+        <button type="submit">Отправить заказ</button>
+      </form>
+    </div>
+
+    <script src="./js/page1shop.js"></script>
+  </body>
+</html>

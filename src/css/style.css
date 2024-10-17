@@ -1,0 +1,115 @@
+body {
+  background-color: #434455;
+  color: #141414;
+}
+
+a,
+li {
+  text-decoration: none;
+  list-style-type: none;
+  color: inherit;
+  outline: none;
+}
+
+img {
+  display: block;
+  width: 100%;
+  height: auto;
+  cursor: default;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+  padding: 0;
+  cursor: default;
+}
+
+ul,
+ol {
+  margin: 0;
+  padding-left: 0;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.main-header-nav {
+  margin-top: 40px;
+}
+
+.header-nav-list {
+  display: flex;
+  justify-content: space-around;
+}
+
+.link-nav1 {
+  background: linear-gradient(rgba(0, 191, 255, 0.5), rgba(124, 252, 0, 0.7));
+  box-shadow: 0 0 30px rgb(255, 105, 180), 0 0 30px rgb(186, 85, 211),
+    0 0 30px rgb(0, 191, 255), 0 0 30px rgb(124, 252, 0);
+  animation: animate 1s linear infinite;
+  font-size: 25px;
+  padding: 9px 12px;
+  border-radius: 4px 48px 45px;
+}
+
+.link-nav2 {
+  background: linear-gradient(rgba(0, 191, 255, 0.5), rgba(124, 252, 0, 0.7));
+  box-shadow: 0 0 30px rgb(255, 105, 180), 0 0 30px rgb(186, 85, 211),
+    0 0 30px rgb(0, 191, 255), 0 0 30px rgb(124, 252, 0);
+  animation: animate 1s linear infinite;
+  font-size: 20px;
+  padding: 9px 12px;
+  border-radius: 4px 168px 4px;
+}
+
+.link-nav3 {
+  background: linear-gradient(rgba(0, 191, 255, 0.5), rgba(124, 252, 0, 0.7));
+  box-shadow: 0 0 30px rgb(255, 105, 180), 0 0 30px rgb(186, 85, 211),
+    0 0 30px rgb(0, 191, 255), 0 0 30px rgb(124, 252, 0);
+  animation: animate 1s linear infinite;
+  font-size: 20px;
+  padding: 9px 12px;
+  border-radius: 168px 4px 168px;
+}
+
+.link-nav4 {
+  background: linear-gradient(rgba(0, 191, 255, 0.5), rgba(124, 252, 0, 0.7));
+  box-shadow: 0 0 30px rgb(255, 105, 180), 0 0 30px rgb(186, 85, 211),
+    0 0 30px rgb(0, 191, 255), 0 0 30px rgb(124, 252, 0);
+  animation: animate 1s linear infinite;
+  font-size: 25px;
+  padding: 9px 12px;
+  border-radius: 33px 4px 28px 29px;
+}
+
+.link-nav1:hover,
+.link-nav2:hover,
+.link-nav4:hover,
+.link-nav3:hover {
+  background: linear-gradient(rgb(255, 105, 180), rgb(186, 85, 211));
+}
+
+@keyframes animate {
+  0% {
+    filter: hue-rotate(0deg);
+  }
+  100% {
+    filter: hue-rotate(360deg);
+  }
+}
