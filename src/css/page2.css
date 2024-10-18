@@ -10,7 +10,7 @@ body {
 }
 
 .loader {
-  --c: no-repeat linear-gradient(#576f35, #7a3145);
+  --c: no-repeat linear-gradient(#7a3145 #576f35);
   background: var(--c), var(--c), var(--c), var(--c), var(--c), var(--c),
     var(--c), var(--c), var(--c);
   background-size: 16px 16px;
