@@ -1,5 +1,11 @@
 .product {
-  margin-bottom: 20px;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.28571;
+  letter-spacing: -0.01em;
+  text-transform: uppercase;
+  color: #141414;
+  width: calc((100% - 21px) / 3);
 }
 
 .product button {
@@ -21,4 +27,44 @@
 
 body {
   background-color: darkolivegreen;
+}
+
+/* ----- Mobile ----- */
+.container {
+  min-width: 320px;
+  max-width: 375px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* ----- Tablet ----- */
+@media only screen and (min-width: 768px) {
+  .container {
+    max-width: 768px;
+    padding: 0 32px;
+  }
+}
+
+/* ----- Desktop ----- */
+@media only screen and (min-width: 1280px) {
+  .container {
+    max-width: 1280px;
+    padding: 0 100px;
+  }
+}
+
+.img-title {
+  font-weight: 600;
+  font-size: 27px;
+  line-height: 1;
+  letter-spacing: -0.01em;
+  color: #7a3145;
+}
+
+.wrapper-img {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 21px;
 }
