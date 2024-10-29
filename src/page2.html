@@ -3,17 +3,45 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>loader</title>
+    <title>Train</title>
     <link rel="stylesheet" href="./css/page2.css" />
   </head>
   <body>
-    <div class="loader"></div>
+    <div class="wave-container" id="wave-container"></div>
+
+    <button class="ripple-button">Click Me</button>
 
     <div class="content">
-      <h1 class="title">Вуаля</h1>
-      <p class="title">Контент.</p>
+      <a href="" class="phone">
+        <svg class="icon-phone" width="18" height="18">
+          <use href="./img/symbol-defs.svg#icon-phone-hang-up"></use>
+        </svg>
+        +380630000000
+      </a>
+
+      <a href="" class="map">
+        <svg class="icon-location2" width="18" height="18">
+          <use href="./img/symbol-defs.svg#icon-location2"></use>
+        </svg>
+        1678 S. Pioneer Road Salt Lake City UT 84104
+      </a>
     </div>
 
+    <div class="content">
+      <h1 class="title" id="wave-text">Ctr-Alt-Elite</h1>
+    </div>
+
+    <div class="content">
+      <h2 class="title-sub">Ctr-Alt-Elite</h2>
+    </div>
+
+    <picture>
+      <source srcset="" media="(min-width:)" />
+      <source srcset="" media="(min-width:)" />
+      <source srcset="" media="(max-width:)" />
+    </picture>
+
+    <script src="./js/page2click.js"></script>
     <script src="./js/page2-loader.js"></script>
   </body>
 </html>

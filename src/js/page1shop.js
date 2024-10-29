@@ -16,7 +16,7 @@ function calculateTotal() {
     total += price * weight;
   });
   document.getElementById("order-summary").textContent =
-    "Общая сумма: " + total.toFixed(2) + " гривен";
+    "Общая сумма: " + total.toFixed(2) + "USD";
 }
 
 // Функция для отображения формы заказа
