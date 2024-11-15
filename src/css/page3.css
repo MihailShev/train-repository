@@ -93,7 +93,9 @@ svg {
 
 .slider {
   overflow: hidden;
-  width: 100%;
+  width: 375px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .slides {
@@ -168,6 +170,19 @@ svg {
   list-style-type: disc;
   padding-left: 16px;
   margin-bottom: 16px;
+  height: 132px;
+  overflow-y: scroll;
+  border-top-right-radius: 6px;
+  border-bottom-right-radius: 6px;
+  background-image: linear-gradient(
+    270deg,
+    rgba(0, 0, 0, 0.2) 0%,
+    transparent 80%
+  );
+}
+
+.list-tours-schedule::-webkit-scrollbar {
+  display: none;
 }
 
 .item-schedule {
@@ -259,6 +274,12 @@ svg {
     width: 279px;
   }
 
+  .slider {
+    width: 835px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
   .wrapper-overlay {
     width: 835px;
   }
@@ -320,7 +341,13 @@ svg {
     background-color: rgba(20, 26, 25, 0.8);
     background-blend-mode: multiply;
     background-repeat: no-repeat;
-    background-position: bottom 85px right 42px;
+    background-position: bottom 85px right 640px;
+  }
+
+  .slider {
+    margin-left: 0;
+    margin-right: 0;
+    width: 100%;
   }
 
   .slide {
@@ -348,6 +375,13 @@ svg {
     flex-direction: column;
     column-gap: 0;
     row-gap: 18px;
+  }
+
+  .list-tours-schedule {
+    border-top-right-radius: 6px;
+    border-bottom-right-radius: 6px;
+    background-color: #1a2422;
+    background-image: linear-gradient(270deg, #1a2422 0%, #141a19 80%);
   }
 
   .wrapper-btn-book {
