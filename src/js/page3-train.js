@@ -302,6 +302,28 @@
 
 // console.log(fillArray(2, 10));
 
+// const animal = {
+//   legs: 4,
+//   names: "Alex",
+// };
+// const dog = Object.create(animal);
+// dog.name = "Mango";
+
+// console.log(dog); // {name: "Mango", [[Prototype]]: animal}
+// console.log(animal);
+
+// !train
+
+// const arr = ["apple", "orange", "grapes"];
+// let newArray = [...arr];
+// console.log(newArray);
+
+// newArray[1] = "peach";
+// console.log(newArray);
+
+// newArray = arr.with(1, "avocado");
+// console.log(newArray);
+
 /*
 ?
 ?
@@ -309,4 +331,3 @@
 ?
 !console.log();
 */
-/*????!console.log();*/
